@@ -91,7 +91,7 @@ The local cache is used at two instances:
 curl --location --request GET 'http://localhost:8080/api/videos?offset=20&limit=20'
 ```
 Preview:
-![Postman Screenshot](https://github.com/shan61916/yt-wrapper/blob/main/image1.jpg?raw=true)
+![Postman Screenshot](https://github.com/shan61916/yt-wrapper/blob/main/blob/image1.png)
 
 - API to get search title (Paginated)
 
@@ -99,4 +99,4 @@ Preview:
 curl --location --request GET 'http://localhost:8080/api/videos/search/virat'
 ```
 Preview:
-![Postman Screenshot](https://github.com/shan61916/yt-wrapper/blob/main/image2.jpg?raw=true)
+![Postman Screenshot](https://github.com/shan61916/yt-wrapper/blob/main/blob/image2.png)
