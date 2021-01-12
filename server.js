@@ -37,6 +37,11 @@ require("./app/routes/videos.routes")(app);
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
 
+// call updateVideoFeed every 10 seconds
+setInterval(async () => {
+	const records = await updateDBJob.updateVideoFeed();
+	console.log(`DB updated with ${records} videos`);
+}, 10000);
 
 app.listen(PORT, async () => {
 	console.log(`Server is running on port ${PORT}.`);
