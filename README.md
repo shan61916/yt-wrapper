@@ -7,7 +7,6 @@ Make sure you have installed all of the following prerequisites on your developm
 * Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
 * Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
 * MYSQL - [Download & Install MYSQL](https://dev.mysql.com/doc/refman/5.7/en/installing.html), and make sure it's running on the default port.
-
 ## Quick Install
 Once you have installed the pre-requisites,
 
@@ -22,7 +21,7 @@ $ npm install
 
 Run your application using npm:
 
-Before running the application make sure you have added the MYSQL configs in the file
+Before running the application make sure you have added the `MYSQL`configs in the file
 
 ```bash
 $ ~/YT-Wrapper/app/config/db.config
@@ -32,7 +31,6 @@ Also don't forget adding your API-Keys in the app config at
 ```bash
 $ ~/YT-Wrapper/app/config/app.config
 ```
-
 Once done, you can start the server in test mode using 
 ```bash
 $ ACTIVE_ENV=TESTING node server.js
@@ -42,7 +40,6 @@ or in the without testing env using
 ```bash
 $ ACTIVE_ENV=TESTING node server.js
 ```
-
 Your application should run on port 8080 with the production environment configuration, so in your browser just go to [http://localhost:8080](http://localhost:8080)
 
 That's it! Your application should be running.
@@ -67,7 +64,7 @@ createdAt datetime
 updatedAt datetime
 ```
 
-With a secondary index on the publishedOn field:
+With a secondary index on the `publishedOn` field:
 ```
 Index: publishedOn_index
 
